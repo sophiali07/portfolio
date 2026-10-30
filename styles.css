@@ -23,7 +23,7 @@ nav a:hover::after { right: 0; }
 @keyframes fade { to { opacity: 0; transform: scale(.1); } }
 
 .hero { min-height: 100svh; position: fixed; inset: 0; z-index: 15; overflow: hidden; display: flex; flex-direction: column; justify-content: center; padding: 8vh 3vw 4vh; border-bottom: 1px solid #dddddd; isolation: isolate; background: #ffffff; transition: opacity .55s ease, transform .75s cubic-bezier(.7,0,.2,1); }
-.hero.intro-leaving { opacity: 0; transform: translateY(-100%); pointer-events: none; }
+.hero.intro-leaving { opacity: 0; transform: translateY(-100%); }
 .hero[hidden] { display: none; }
 .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .7rem; font-weight: 600; }
 .hero > .eyebrow { position: absolute; top: 13vh; }

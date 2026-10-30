@@ -1,7 +1,6 @@
 const finePointer = window.matchMedia("(pointer: fine)").matches;
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const hero = document.querySelector(".hero");
-const exploreLink = document.querySelector(".scroll-link");
 
 window.scrollTo(0, 0);
 
@@ -14,13 +13,9 @@ function finishIntro() {
   }, reduceMotion ? 0 : 760);
 }
 
-let introTimer = window.setTimeout(finishIntro, 5000);
-
-exploreLink.addEventListener("click", (event) => {
-  event.preventDefault();
-  window.clearTimeout(introTimer);
-  finishIntro();
-});
+window.setTimeout(() => {
+  hero.addEventListener("pointerdown", finishIntro, { once: true });
+}, 1000);
 
 if (finePointer && !reduceMotion) {
   const cursor = document.querySelector(".cursor");
