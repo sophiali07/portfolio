@@ -3,23 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sophia Li — designer working across interaction, product, and visual design." />
-    <title>Sophia Li — Designer</title>
+    <meta name="description" content="Sophia Li — UI/UX and product designer exploring creativity, design, and technology." />
+    <title>Sophia Li — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="intro-lock">
     <div class="cursor" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Sophia Li, home">SL</a>
-      <nav aria-label="Main navigation">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#about">Info</a>
-      </nav>
-    </header>
 
     <main>
       <section class="hero" id="top" aria-labelledby="hero-title">
@@ -31,45 +23,88 @@
         </h1>
         <div class="hero-footer">
           <p>I design playful, human-centered experiences where technology meets everyday life.</p>
-          <a class="scroll-link" href="#work"><span>Explore work</span><span aria-hidden="true">↘</span></a>
+          <a class="scroll-link" href="#cover"><span>Enter portfolio</span><span aria-hidden="true">↘</span></a>
         </div>
       </section>
 
-      <section class="work" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="work-title">Ideas made tangible.</h2>
+      <section class="cover grid-paper" id="cover" aria-labelledby="cover-title">
+        <div class="cover-contact"><a href="mailto:sli38869@usc.edu">sli38869@usc.edu</a></div>
+        <div class="cover-stage">
+          <span class="ribbon">UI/UX</span>
+          <span class="year-star">20<br />26</span>
+          <div class="portfolio-window" aria-hidden="true">
+            <div class="shutter shutter-left"></div>
+            <div class="window-center">
+              <span class="welcome">Sophia’s</span>
+              <span class="portfolio-word">Port<span>f</span>olio</span>
+              <span class="signature">Sophia Li</span>
+            </div>
+            <div class="shutter shutter-right"></div>
+          </div>
+          <span class="design-badge">Product<br />design</span>
         </div>
-        <div class="project-grid">
-          <a class="project project-featured" href="https://hisophia07.wixsite.com/portfolio/ui-ux">
-            <div class="project-art art-lingo" aria-hidden="true"><span>Hello</span><span>你好</span><span>안녕</span></div>
-            <div class="project-meta"><span>UI/UX Design</span><span>01 ↗</span></div>
+        <h1 class="sr-only" id="cover-title">Sophia’s Portfolio</h1>
+        <p class="cover-statement">I explore the intersection of creativity, design, and technology, with a focus on human-centered design.</p>
+        <a class="down-arrow" href="#contents" aria-label="Go to table of contents">↓</a>
+      </section>
+
+      <section class="contents" id="contents" aria-labelledby="contents-title">
+        <div class="contents-copy">
+          <p class="chapter">01 / Index</p>
+          <h2 id="contents-title">Table of<br />Content</h2>
+          <p>Choose a folder to explore.</p>
+        </div>
+        <div class="file-box" aria-label="Portfolio categories">
+          <div class="box-back" aria-hidden="true"></div>
+          <a class="folder folder-red" href="#other"><span>Other Artwork</span></a>
+          <a class="folder folder-yellow" href="#product"><span>Product Design</span></a>
+          <a class="folder folder-blue" href="#uiux"><span>UI/UX</span></a>
+          <div class="box-front" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
+
+      <section class="category category-blue" id="uiux" aria-labelledby="uiux-title">
+        <header class="category-heading">
+          <span>01</span><h2 id="uiux-title">UI/UX</h2>
+          <p>Digital experiences designed around how people learn, move, and connect.</p>
+        </header>
+        <a class="case-card case-lingo" href="https://hisophia07.wixsite.com/portfolio/ui-ux">
+          <div class="case-visual"><span>Hello</span><span>你好</span><span>안녕</span></div>
+          <div class="case-meta"><span>Language-learning experience</span><span>View project ↗</span></div>
+        </a>
+      </section>
+
+      <section class="category category-yellow" id="product" aria-labelledby="product-title">
+        <header class="category-heading">
+          <span>02</span><h2 id="product-title">Product Design</h2>
+          <p>Objects and systems that turn environmental intention into everyday action.</p>
+        </header>
+        <div class="case-grid">
+          <a class="case-card" href="https://hisophia07.wixsite.com/portfolio/environmental-council">
+            <div class="case-visual object-one"><i></i></div>
+            <div class="case-meta"><span>Environmental Council</span><span>View ↗</span></div>
           </a>
-          <a class="project" href="https://hisophia07.wixsite.com/portfolio/environmental-council">
-            <div class="project-art art-product" aria-hidden="true"><div class="product-form"></div></div>
-            <div class="project-meta"><span>Product Design</span><span>02 ↗</span></div>
-          </a>
-          <a class="project" href="https://hisophia07.wixsite.com/portfolio/book-cover-1">
-            <div class="project-art art-editorial" aria-hidden="true"><span>FORM</span><i></i><span>STORY</span></div>
-            <div class="project-meta"><span>Digital Design</span><span>03 ↗</span></div>
-          </a>
-          <a class="project project-wide" href="https://hisophia07.wixsite.com/portfolio/wood-wave">
-            <div class="project-art art-spatial" aria-hidden="true"><div class="wave"></div></div>
-            <div class="project-meta"><span>Spatial Design</span><span>04 ↗</span></div>
+          <a class="case-card" href="https://hisophia07.wixsite.com/portfolio/battery-box">
+            <div class="case-visual object-two"><i></i></div>
+            <div class="case-meta"><span>Battery recycling box</span><span>View ↗</span></div>
           </a>
         </div>
       </section>
 
-      <section class="about" id="about" aria-labelledby="about-title">
-        <p class="eyebrow">About</p>
-        <div>
-          <h2 id="about-title">Curious by nature,<br />thoughtful by design.</h2>
-          <p>I’m Sophia, a designer at USC studying Arts, Technology and the Business of Innovation. I explore interaction, objects, and spaces through a human-centered lens.</p>
+      <section class="category category-red" id="other" aria-labelledby="other-title">
+        <header class="category-heading">
+          <span>03</span><h2 id="other-title">Other Artwork</h2>
+          <p>Experiments across visual, spatial, and observational practice.</p>
+        </header>
+        <div class="other-links">
+          <a href="https://hisophia07.wixsite.com/portfolio/book-cover-1"><span>Digital design</span><b>Book cover</b><i>↗</i></a>
+          <a href="https://hisophia07.wixsite.com/portfolio/wood-wave"><span>Spatial design</span><b>Wood Wave</b><i>↗</i></a>
+          <a href="https://hisophia07.wixsite.com/portfolio/behind-the-blinds"><span>Drawing</span><b>Behind the Blinds</b><i>↗</i></a>
         </div>
       </section>
     </main>
 
-    <footer><span>© 2026 Sophia Li</span><a href="#top">Back to top ↑</a></footer>
+    <footer><span>© 2026 Sophia Li</span><a href="mailto:sli38869@usc.edu">sli38869@usc.edu</a><a href="#cover">Back to top ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>
