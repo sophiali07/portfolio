@@ -1,5 +1,22 @@
 const finePointer = window.matchMedia("(pointer: fine)").matches;
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const hero = document.querySelector(".hero");
+const work = document.querySelector("#work");
+const exploreLink = document.querySelector(".scroll-link");
+
+window.scrollTo(0, 0);
+
+let introTimer = window.setTimeout(() => {
+  document.body.classList.remove("intro-lock");
+  hero.classList.add("intro-leaving");
+  work.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+  window.setTimeout(() => hero.classList.remove("intro-leaving"), 900);
+}, 5000);
+
+exploreLink.addEventListener("click", () => {
+  window.clearTimeout(introTimer);
+  document.body.classList.remove("intro-lock");
+});
 
 if (finePointer && !reduceMotion) {
   const cursor = document.querySelector(".cursor");
